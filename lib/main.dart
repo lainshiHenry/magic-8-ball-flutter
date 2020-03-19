@@ -5,3 +5,10 @@ void main() => runApp(
         home: null,
       ),
     );
+
+class BallPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}

@@ -20,8 +20,9 @@ class _BallState extends State<Ball> {
     return Center(
       child: FlatButton(
           onPressed: () {
-            ballNumber = Random().nextInt(5);
-            print(ballNumber);
+            setState(() {
+              ballNumber = Random().nextInt(5) + 1;
+            });
           },
           child: Image.asset('images/ball$ballNumber.png')),
     );
